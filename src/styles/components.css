@@ -1,0 +1,31 @@
+.user-profile {
+  padding: 1rem;
+}
+
+.user-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.user-list-item {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+}
+
