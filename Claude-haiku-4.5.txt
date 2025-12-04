@@ -1,0 +1,104 @@
+jitianxiang: Prompt:
+You are a senior developer reviewing a React + TypeScript frontend application that has been developed by multiple team members over time.
+
+Your Task:
+
+Analyze the entire codebase and identify all instances of:
+
+Inconsistent labeling policies (e.g., TODO/FIXME/comments usage)
+
+Naming conventions inconsistencies (e.g., camelCase vs snake_case, PascalCase vs camelCase)
+
+Coding pattern inconsistencies (e.g., functional vs class components, state management styles)
+
+Document your findings in a structured manner including:
+
+Specific examples of inconsistencies found, including file paths and relevant code snippets
+
+Impact assessment: describe how these inconsistencies affect maintainability, readability, and team collaboration
+
+Standardization recommendations: propose unified approaches with rationale
+
+Refactored examples: show how at least 2-3 inconsistent files or snippets can be standardized
+
+Output the analysis to a file in either Markdown (.md) or JSON (.json) format. Include a clear structure, headings, or keys to organize the content for team consumption.
+
+Title: React + TypeScript Frontend Inconsistent Labeling and Coding Pattern Analysis
+
+Description:
+This document presents a comprehensive review of the React + TypeScript frontend codebase to identify and analyze inconsistencies in labeling, naming conventions, and coding patterns. It provides actionable insights for standardization, improving maintainability and team collaboration. The deliverable includes detailed examples, impact assessments, and recommended refactorings.
+
+GitHub Copilot: I'll analyze the codebase systematically to identify inconsistencies in labeling, naming conventions, and coding patterns. Let me start by examining all files. 
+
+Read [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/package.json)
+
+Read [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/tsconfig.json)
+
+Now let me read all the source files: 
+
+Read [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/src/components/SearchBar.tsx)
+
+Read [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/src/components/UserCard.tsx)
+
+Read [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/src/components/UserCard.refactored.tsx)
+
+Read [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/src/components/UserForm.tsx)
+
+Read [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/src/components/UserForm.refactored.tsx)
+
+Read [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/src/components/UserListItem.tsx)
+
+Read [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/src/components/UserProfile.tsx)
+
+Read [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/src/components/UserTable.tsx)
+
+Read [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/src/hooks/useUserData.ts)
+
+Read [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/src/services/userService.ts)
+
+Read [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/src/services/userService.refactored.ts)
+
+Read [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/src/types/user.ts)
+
+Read [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/src/types/user.refactored.ts)
+
+Read [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/src/utils/userHelpers.ts)
+
+Read [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/src/styles/components.css)
+
+Now I have a complete picture of the codebase. Let me create a comprehensive analysis document. I'll identify all the inconsistencies and provide structured recommendations. 
+
+Created [](file:///c%3A/Users/v-tianji/Desktop/ghcpd/Claude-haiku-4.5/CODEBASE_ANALYSIS.md)
+
+Perfect! I've completed a comprehensive analysis of the React + TypeScript codebase and generated a detailed report. Here's what I've delivered:
+
+## Analysis Summary
+
+**27 distinct inconsistencies identified** across three major categories:
+
+### **Critical Issues Found:**
+1. **User ID field naming** - 7 variants (id, uid, userId, identifier, userIdentifier)
+2. **User name field naming** - 8 variants (name, username, userName, displayName, fullName)
+3. **User email field naming** - 8 variants (email, emailAddress, userEmail, contactEmail)
+4. **Duplicate type definitions** - 4 different interfaces representing users
+5. **CSS inconsistency** - BEM methodology only partially adopted
+6. **Missing error handling** - No validation in critical API calls
+7. **Inconsistent documentation** - Ranges from none to comprehensive
+
+### **Deliverable Contents:**
+
+The analysis document (CODEBASE_ANALYSIS.md) includes:
+
+✅ **Executive Summary** - High-level overview of all findings
+✅ **27 Detailed Inconsistencies** - With file paths, code examples, and impact assessment
+✅ **Impact Assessment** - How inconsistencies affect maintainability, readability, and collaboration
+✅ **Standardization Recommendations** - 7 key recommendations with rationale
+✅ **3 Refactored Examples** - Before/after comparisons showing proper patterns
+✅ **5-Week Implementation Roadmap** - Phased approach to standardization
+✅ **Team Guidelines Checklist** - Quick reference for naming, types, docs, and errors
+✅ **Tool Recommendations** - ESLint, Husky, TypeScript configs
+✅ **Migration Checklist** - Actionable tasks with tracking
+
+The document is professional, team-ready, and includes quick reference sections for developers.
+
+Made changes.
