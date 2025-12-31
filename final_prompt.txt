@@ -1,0 +1,2 @@
+Prompt:
+You are a senior developer reviewing a React + TypeScript frontend application that has been developed by multiple team members over time.
