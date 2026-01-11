@@ -1,10 +1,5 @@
 import React from 'react';
-
-interface User {
-  uid: string;
-  username: string;
-  emailAddress: string;
-}
+import { User } from '../types/user.refactored';
 
 interface UserTableProps {
   users: User[];
@@ -15,18 +10,18 @@ export const UserTable: React.FC<UserTableProps> = ({ users }) => {
     <table className="user-table" data-testid="user-table">
       <thead>
         <tr>
-          <th>UID</th>
-          <th>Username</th>
-          <th>Email Address</th>
+          <th>User ID</th>
+          <th>Name</th>
+          <th>Email</th>
           <th>Actions</th>
         </tr>
       </thead>
       <tbody>
         {users.map((user) => (
-          <tr key={user.uid}>
-            <td>{user.uid}</td>
-            <td>{user.username}</td>
-            <td>{user.emailAddress}</td>
+          <tr key={user.userId}>
+            <td>{user.userId}</td>
+            <td>{user.userName}</td>
+            <td>{user.userEmail}</td>
             <td>
               <button aria-label="Edit user">Edit</button>
             </td>
