@@ -1,0 +1,29 @@
+Prompt:
+You are a senior developer reviewing a React + TypeScript frontend application that has been developed by multiple team members over time.
+
+Your Task:
+
+Analyze the entire codebase and identify all instances of:
+
+Inconsistent labeling policies (e.g., TODO/FIXME/comments usage)
+
+Naming conventions inconsistencies (e.g., camelCase vs snake_case, PascalCase vs camelCase)
+
+Coding pattern inconsistencies (e.g., functional vs class components, state management styles)
+
+Document your findings in a structured manner including:
+
+Specific examples of inconsistencies found, including file paths and relevant code snippets
+
+Impact assessment: describe how these inconsistencies affect maintainability, readability, and team collaboration
+
+Standardization recommendations: propose unified approaches with rationale
+
+Refactored examples: show how at least 2-3 inconsistent files or snippets can be standardized
+
+Output the analysis to a file in either Markdown (.md) or JSON (.json) format. Include a clear structure, headings, or keys to organize the content for team consumption.
+
+Title: React + TypeScript Frontend Inconsistent Labeling and Coding Pattern Analysis
+
+Description:
+This document presents a comprehensive review of the React + TypeScript frontend codebase to identify and analyze inconsistencies in labeling, naming conventions, and coding patterns. It provides actionable insights for standardization, improving maintainability and team collaboration. The deliverable includes detailed examples, impact assessments, and recommended refactorings.
