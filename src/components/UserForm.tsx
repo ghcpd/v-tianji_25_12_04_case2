@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 export const UserForm: React.FC = () => {
   const [formData, setFormData] = useState({
-    userIdentifier: '',
-    fullName: '',
-    email: ''
+    userId: '',
+    userName: '',
+    userEmail: ''
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -15,33 +15,33 @@ export const UserForm: React.FC = () => {
   return (
     <form className="user-form" onSubmit={handleSubmit} data-testid="user-form">
       <div className="form-group">
-        <label htmlFor="user-identifier">User Identifier</label>
+        <label htmlFor="user-id">User ID</label>
         <input
           type="text"
-          id="user-identifier"
-          name="userIdentifier"
-          value={formData.userIdentifier}
-          onChange={(e) => setFormData({ ...formData, userIdentifier: e.target.value })}
+          id="user-id"
+          name="userId"
+          value={formData.userId}
+          onChange={(e) => setFormData({ ...formData, userId: e.target.value })}
         />
       </div>
       <div className="form-group">
-        <label htmlFor="full-name">Full Name</label>
+        <label htmlFor="user-name">Name</label>
         <input
           type="text"
-          id="full-name"
-          name="fullName"
-          value={formData.fullName}
-          onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+          id="user-name"
+          name="userName"
+          value={formData.userName}
+          onChange={(e) => setFormData({ ...formData, userName: e.target.value })}
         />
       </div>
       <div className="form-group">
-        <label htmlFor="email">Email</label>
+        <label htmlFor="user-email">Email</label>
         <input
           type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+          id="user-email"
+          name="userEmail"
+          value={formData.userEmail}
+          onChange={(e) => setFormData({ ...formData, userEmail: e.target.value })}
         />
       </div>
       <button type="submit" aria-label="Submit form">Submit</button>
